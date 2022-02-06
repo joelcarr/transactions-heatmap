@@ -1,7 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import transactionsReducers from '../features/transactions/transactionsSlice';
 
 export const store = configureStore({
   reducer: {
+    transactions: transactionsReducers,
   },
 });
 
